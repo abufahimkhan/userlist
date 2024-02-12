@@ -3,7 +3,6 @@ import axios from 'axios';
 
 import { Link } from 'react-router-dom';
 
-
 export default function UserList() {
     const [users, setUsers] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
@@ -53,7 +52,7 @@ export default function UserList() {
             <div className="header mb-4">
                 <h1 className="text-3xl font-bold mb-2">Users Data</h1>
                 <p className="text-gray-600 mb-2">Click Username To See Details</p>
-                <div className="search-sort-container flex items-center space-x-4">
+                <div className="search-sort-container flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
                     <input
                         type="text"
                         placeholder="Search by name..."
@@ -94,7 +93,6 @@ export default function UserList() {
                     </div>
                 ))}
             </div>
-
         </div>
     );
 }
