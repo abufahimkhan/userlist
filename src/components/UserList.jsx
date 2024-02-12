@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
 import { Link } from 'react-router-dom';
 
 export default function UserList() {
@@ -79,7 +78,7 @@ export default function UserList() {
                 {sortedUsers.map((user, index) => (
                     <div
                         key={user.id}
-                        className={"card border border-gray-900 rounded-lg p-4 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring focus:border-blue-300 active:scale-95"}
+                        className="card border border-gray-900 rounded-lg p-4 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring focus:border-blue-300 active:scale-95"
                     >
                         <img src={user.image} alt={`Avatar of ${user.firstName}`} className="w-full mb-4 card border border-gray-400 rounded-lg" />
                         <Link to={`/user/${user.id}`} className="text-xl font-bold text-blue-500 hover:underline">
