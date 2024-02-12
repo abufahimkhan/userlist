@@ -1,0 +1,11 @@
+/* Styles for a closed sidebar RegionList Sidebar*/
+  .open .flex-1 {
+ 
+    width: 230px; 
+  }
+
+  .close .flex-1{
+    display: none;
+  }
+  
+  
