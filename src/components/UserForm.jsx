@@ -106,6 +106,11 @@ export default function UserForm() {
     return (
         <div className="container mx-auto p-4">
             <h2 className="text-3xl font-bold mb-4 text-center">Add New User</h2>
+            <Link to="/" className="block text-center text-blue-500 hover:underline">
+                <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                    User List
+                    </button>
+                </Link>
             <form className="max-w-md mx-auto p-4 bg-white shadow-md rounded-lg" onSubmit={handleFormSubmit}>
 
                 {/* Input fields for user details */}
@@ -258,8 +263,9 @@ export default function UserForm() {
 
                 {/* Submit button */}
                 <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">Submit</button>
+                
             </form>
-            <Link to="/" className="block text-center text-blue-500 hover:underline">Go Back to User List</Link>
+          
         </div>
     );
 }
